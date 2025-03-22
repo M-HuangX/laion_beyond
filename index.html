@@ -3,30 +3,22 @@
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Reproducible Vision-Language Models Meet Concepts Out of Pre-Training. This paper introduces LAION-Beyond benchmark and proposes FSNL and ZSNL algorithms to address out-of-pre-training generalization issues in vision-language models.">
-  <meta property="og:title" content="Reproducible Vision-Language Models Meet Concepts Out of Pre-Training"/>
-  <meta property="og:description" content="A CVPR 2025 paper proposing LAION-Beyond benchmark and new algorithms FSNL and ZSNL to tackle OOP generalization issues."/>
-  <meta property="og:url" content="https://yourwebsite.com"/>
-  <meta property="og:image" content="static/image/carousel1.jpg" />
+  <meta name="description" content="LAION-Beyond: Reproducible Vision-Language Models Meet Concepts Out of Pre-Training">
+  <meta property="og:title" content="LAION-Beyond: Reproducible Vision-Language Models Meet Concepts Out of Pre-Training"/>
+  <meta property="og:description" content="Exploring how vision-language models generalize to concepts not seen during pre-training"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/laion_beyond_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-<!--   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-<!--   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">  -->
-  
-  
-  <!-- Keywords for your paper to be indexed by--> 
-  
-  <meta name="keywords" content="Vision-Language Models, CLIP, LAION, Out-of-Pre-Training Generalization, FSNL, ZSNL, OOP concepts">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="vision-language models, CLIP, out-of-pre-training generalization, few-shot learning, zero-shot learning, LAION-Beyond">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Reproducible Vision-Language Models Meet Concepts Out of Pre-Training</title>
+  <title>LAION-Beyond: Reproducible Vision-Language Models Meet Concepts Out of Pre-Training</title>
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -54,7 +46,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Reproducible Vision-Language Models Meet Concepts Out of Pre-Training</h1>
+            <h1 class="title is-1 publication-title">LAION-Beyond: Reproducible Vision-Language Models Meet Concepts Out of Pre-Training</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -93,17 +85,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-<!--                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/M-HuangX/LAION-Beyond" target="_blank"
@@ -117,12 +98,23 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    <a href="https://arxiv.org/abs/12345" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv - Coming Soon...</span>
+                  </a>
+                </span>
+
+                <!-- Dataset Link -->
+                <span class="link-block">
+                  <a href="#" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-database"></i>
                   </span>
-                  <span>arXiv - Coming Soon...</span>
+                  <span>Dataset</span>
                 </a>
               </span>
             </div>
@@ -134,59 +126,6 @@
 </section>
 
 
-<!-- Teaser video-->
-  
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-  
-<!-- End teaser video -->
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <img src="static/images/1_Dataset_Analysis.png" alt="Description of the image" style="max-width: 100%; height: auto;">
-          <h2 class="subtitle has-text-centered">
-            Your descriptive text about the image goes here. For example, "Visualization of the proposed methodology and its components."
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <!-- Replace video with a scaled image -->
-          <img src="static/images/1_Dataset_Analysis.png" 
-               alt="Description of the image" 
-               style="width: 100%; max-width: none; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          <!-- Add a description below the image -->
-          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
-            Your descriptive text about the image goes here. For example, "Visualization of the proposed methodology and its components."
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -195,7 +134,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Contrastive Language-Image Pre-training (CLIP) models, as a milestone of modern multimodal intelligence, have gained significant attention for their generalization capabilities. However, their ability to generalize to open-world concepts absent from pre-training remains unexplored. This paper introduces the LAION-Beyond benchmark and proposes novel algorithms, Few-Shot Name Learning (FSNL) and Zero-Shot Name Learning (ZSNL), to address this out-of-pre-training generalization problem. Comprehensive experiments validate their effectiveness.
+            Contrastive Language-Image Pre-training (CLIP) models, as a milestone of modern multimodal intelligence, have attracted significant research interest regarding their generalization mechanisms. While existing studies have been limited to the scope of pre-training knowledge, they have hardly addressed the model's generalization to countless open-world concepts absent from the pre-training regime. This paper investigates this Out-of-Pre-training (OOP) generalization problem from a holistic perspective. We propose the LAION-Beyond benchmark to isolate the evaluation of OOP concepts from pre-training knowledge, focusing on OpenCLIP and its reproducible variants derived from LAION datasets. Empirical analysis shows that despite image features of OOP concepts exhibiting significant category margins, their zero-shot transfer significantly fails due to poor image-text alignment. To address this, we elaborate the "name-tuning" methodology with its theoretical merits for OOP generalization, and propose few-shot name learning (FSNL) and zero-shot name learning (ZSNL) algorithms to achieve OOP generalization in a data-efficient manner. Their superiority has been further verified in our comprehensive experiments.
           </p>
         </div>
       </div>
@@ -204,141 +143,332 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Key Highlights Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Highlights</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title is-4">First Systematic Study</p>
+            <p class="content">First research to systematically explore vision-language models' generalization to concepts absent from pre-training data</p>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title is-4">Novel Benchmark</p>
+            <p class="content">LAION-Beyond: the first multi-domain benchmark specifically designed to evaluate OOP concept generalization</p>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- 
-
-Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title is-4">Novel Algorithms</p>
+            <p class="content">FSNL and ZSNL: innovative approaches to effectively solve the OOP generalization problem</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video
- -->
+<!-- End Key Highlights Section -->
 
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<!-- Research Background Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Research Background</h2>
+    <div class="content has-text-justified">
+      <p>
+        Modern vision-language models (like CLIP) have demonstrated remarkable zero-shot and few-shot learning capabilities through large-scale image-text pair pre-training. However, how these models perform when faced with concepts never encountered during pre-training remains a critical yet under-explored question.
+      </p>
+      <p>
+        <strong>Research Distinction:</strong> We distinguish between IP concepts (In-Pre-training) that appear in pre-training data and OOP concepts (Out-of-Pre-training) that are absent from pre-training data.
+      </p>
+
+      <!-- Placeholder for Figure 1: IP vs OOP concept comparison -->
+      <div class="has-text-centered">
+        <figure class="image">
+          <img src="[Figure 1: IP vs OOP concept comparison illustration]" alt="Comparison between IP and OOP generalization">
+          <figcaption>Figure 1: Comparison between IP and OOP generalization. The former evaluates OpenCLIP's generalization with visual concepts seen in pre-training phases, whereas the latter justifies its generalization through the concepts absent during pre-training.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Research Background Section -->
+
+<!-- LAION-Beyond Benchmark Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">The LAION-Beyond Benchmark</h2>
+    <div class="content has-text-justified">
+      <p>
+        We constructed the LAION-Beyond benchmark as the first dedicated dataset for evaluating vision-language models' generalization to Out-of-Pre-training concepts:
+      </p>
+      <ul>
+        <li><strong>Scale:</strong> 106,052 images across 674 OOP concepts and 51,330 images across 324 IP concepts</li>
+        <li><strong>Coverage:</strong> Spans 9 diverse domains including Plants & Fungi, Insects & Spiders, Animals, Pokemon, FolkArt, Landmark, Attire, Food, and Architecture</li>
+        <li><strong>Multiple Versions:</strong> Provides subsets corresponding to LAION-400M, LAION-2B, and LAION-5B to support neural scaling law research</li>
+      </ul>
+
+      <!-- Placeholder for Figure 2: LAION-Beyond dataset statistics -->
+      <div class="has-text-centered">
+        <figure class="image">
+          <img src="[Figure 2: LAION-Beyond dataset statistics]" alt="Statistics of OOP and IP concepts in LAION-Beyond">
+          <figcaption>Figure 2: The statistics of OOP and IP concepts and their images in LAION-Beyond (400M), (2B), and (5B).</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End LAION-Beyond Benchmark Section -->
+
+<!-- Key Findings Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Findings</h2>
+    
+    <!-- Finding 1 -->
+    <div class="box">
+      <h3 class="title is-4">1. Strong Image Feature Representation for OOP Concepts</h3>
+      <div class="content has-text-justified">
+        <p>
+          OpenCLIP's image encoder can extract features with clear clustering boundaries for OOP concepts, even though these concepts never appeared during pre-training:
+        </p>
+        <ul>
+          <li>Cluster visualization shows distinct class boundaries for OOP concept image features</li>
+          <li>The clustering accuracy gap between OOP and IP concepts is less than 3% across most domains</li>
+        </ul>
+
+        <!-- Placeholder for Figure 3 and Table 1 -->
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <img src="[Figure 3: t-SNE visualization of OOP concept image features]" alt="t-SNE visualization of image features">
+              <figcaption>Figure 3: The t-SNE visualization for (a) image features from 20 OOP classes drawn from Plants & Fungi; (b) image features from 10 OOP classes and 10 IP classes.</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src="[Table 1: OOP vs IP clustering accuracy comparison]" alt="Clustering accuracy comparison">
+              <figcaption>Table 1: The normalized clustering accuracy across features extracted from OOP-class test images and IP-class test images across 9 domains.</figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+      </div>
+    </div>
+
+    <!-- Finding 2 -->
+    <div class="box">
+      <h3 class="title is-4">2. Image-Text Alignment Failure</h3>
+      <div class="content has-text-justified">
+        <p>
+          Despite strong image encoding capabilities, OpenCLIP fails to achieve cross-modal alignment for OOP concepts:
+        </p>
+        <ul>
+          <li>Zero-shot classification accuracy for OOP concepts is significantly lower than for IP concepts</li>
+          <li>The image-text alignment issue persists even with increasing pre-training data scale</li>
+          <li>Root cause: Token embeddings for OOP concepts were not initialized with any image-text alignment during pre-training</li>
+        </ul>
+
+        <!-- Placeholder for Figure 4 -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Figure 4: Zero-shot performance comparison]" alt="Zero-shot performance comparison">
+            <figcaption>Figure 4: OpenCLIP's zero-shot inference accuracy on OOP and IP classes in LAION-Beyond (400M), (2B), and (5B), respectively.</figcaption>
+          </figure>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-<!-- End video carousel -->
+</section>
+<!-- End Key Findings Section -->
 
+<!-- Methodology Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Our Approach</h2>
+    <div class="content has-text-justified">
+      <p>
+        Based on our findings, we developed two novel algorithms to address the OOP generalization problem:
+      </p>
+    </div>
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+    <!-- FSNL -->
+    <div class="box">
+      <h3 class="title is-4">Few-Shot Name Learning (FSNL)</h3>
+      <div class="content has-text-justified">
+        <p>For scenarios with a few image-text pairs for OOP concepts:</p>
+        <ul>
+          <li>Optimizes only the name embeddings of OOP concepts, keeping other parameters fixed</li>
+          <li>Enhances training with context augmentation through similar concept shuffling</li>
+          <li>Combines theoretical guarantees with empirical validation</li>
+        </ul>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
 
+    <!-- ZSNL -->
+    <div class="box">
+      <h3 class="title is-4">Zero-Shot Name Learning (ZSNL)</h3>
+      <div class="content has-text-justified">
+        <p>For scenarios with no image-text pairs for OOP concepts:</p>
+        <ul>
+          <li>Leverages Novel Class Discovery (NCD) techniques to guide OOP class image clustering</li>
+          <li>Implements image-text bipartite graph matching</li>
+          <li>Optimizes OOP name embeddings using high-confidence samples</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Methodology Section -->
+
+<!-- Experimental Results Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+
+    <!-- OOP Few-Shot Learning -->
+    <div class="box">
+      <h3 class="title is-4">OOP Few-Shot Learning</h3>
+      <div class="content has-text-justified">
+        <p>
+          FSNL outperforms all baseline methods across 8 domains (except Food), with performance continuously improving as sample count increases.
+        </p>
+
+        <!-- Placeholder for Figure 5 -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Figure 5: Few-shot learning performance comparison]" alt="Few-shot learning performance comparison">
+            <figcaption>Figure 5: OOP few-shot learning performances (1,2,4,8,16 shots) of different baselines in the test sets of Animals, Landmark, and Pokemon across 9 domains in LAION-Beyond (400M).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- OOP to IP Balance -->
+    <div class="box">
+      <h3 class="title is-4">OOP and IP Concept Balance</h3>
+      <div class="content has-text-justified">
+        <p>
+          FSNL maintains high recognition rates for OOP concepts while preserving original performance on IP concepts, achieving the best of both worlds.
+        </p>
+
+        <!-- Placeholder for Table 2 -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Table 2: OOP-to-IP open-vocabulary prediction comparison]" alt="OOP-to-IP open-vocabulary prediction">
+            <figcaption>Table 2: OOP-to-IP open-vocabulary prediction. OOP, IP, and H-mean represent the accuracies of the models trained for OOP few-shot learning (4-shot), their accuracies in IP image dataset, and their compound Harmonic mean score, respectively.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open-World Vocabulary Transfer -->
+    <div class="box">
+      <h3 class="title is-4">Open-World Vocabulary Transfer</h3>
+      <div class="content has-text-justified">
+        <p>
+          In evaluations with mixed OOP and IP concepts, FSNL significantly outperforms all baseline methods.
+        </p>
+
+        <!-- Placeholder for Table 3 -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Table 3: Open-world transfer results]" alt="Open-world transfer results">
+            <figcaption>Table 3: The open-world transfer results (ACC across all OOP-class test images and IP-class images) across 9 domains.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- OOP Zero-Shot Learning -->
+    <div class="box">
+      <h3 class="title is-4">OOP Zero-Shot Learning</h3>
+      <div class="content has-text-justified">
+        <p>
+          ZSNL substantially outperforms baseline methods in zero-shot learning for OOP concepts across 13 domains.
+        </p>
+
+        <!-- Placeholder for Table 4 -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Table 4: OOP zero-shot learning accuracy comparison]" alt="OOP zero-shot learning accuracy">
+            <figcaption>Table 4: Zero-shot learning ACC (%) in OOP classes drawn from domains in LAION-Beyond (400M) and (5B).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neural Scaling Law Performance -->
+    <div class="box">
+      <h3 class="title is-4">FSNL Performance Across Model Scales</h3>
+      <div class="content has-text-justified">
+        <p>
+          FSNL demonstrates consistent performance improvements across different model scales, including larger models and different CLIP variants (OpenAI CLIP, EVA-CLIP).
+        </p>
+
+        <!-- Placeholder for Neural Scaling Law Figure -->
+        <div class="has-text-centered">
+          <figure class="image">
+            <img src="[Neural Scaling Law Figure: FSNL performance across model scales]" alt="FSNL performance across model scales">
+            <figcaption>Figure 6: FSNL performance under neural scaling law, demonstrating effective improvement across larger models and different CLIP variants (OpenAI, EVA).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experimental Results Section -->
+
+<!-- Impact Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Impact and Significance</h2>
+    <div class="content has-text-justified">
+      <p>
+        Our research fills a critical gap in vision-language model research, with far-reaching impacts:
+      </p>
+      <ul>
+        <li><strong>Theoretical Contribution:</strong> First theoretical framework for the OOP generalization problem</li>
+        <li><strong>Practical Value:</strong> Efficient algorithms for handling new concepts in the open world</li>
+        <li><strong>Future Direction:</strong> Paving the way for truly open-world multimodal systems</li>
+      </ul>
+      <p>
+        The LAION-Beyond benchmark and our two algorithms not only reveal the capabilities and limitations of vision-language models with OOP concepts but also provide effective solutions for OOP generalization, offering significant value for advancing open-world multimodal AI.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Impact Section -->
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section hero is-light" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{anonymous2025laionbeyond,
+  title={Reproducible Vision-Language Models Meet Concepts Out of Pre-Training},
+  author={Anonymous},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025}
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
@@ -349,11 +479,5 @@ Youtube video -->
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
