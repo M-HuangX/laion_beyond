@@ -835,12 +835,128 @@
           ZSNL substantially outperforms baseline methods in zero-shot learning for OOP concepts across 13 domains.
         </p>
 
-        <!-- Placeholder for Table 4 -->
-        <div class="has-text-centered">
-          <figure class="image">
-            <img src="[Table 4: OOP zero-shot learning accuracy comparison]" alt="OOP zero-shot learning accuracy">
-            <figcaption>Table 4: Zero-shot learning ACC (%) in OOP classes drawn from domains in LAION-Beyond (400M) and (5B).</figcaption>
-          </figure>
+        <!-- Replace the image placeholder with this HTML table -->
+        <div class="has-text-centered" style="overflow-x: auto;">
+            <table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                <th colspan="2">Splits</th>
+                <th>Anim</th>
+                <th>Arch</th>
+                <th>Atti</th>
+                <th>Folk</th>
+                <th>Food</th>
+                <th>Insect</th>
+                <th>Ladmk</th>
+                <th>Plant</th>
+                <th>Pokem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- LAION-400M Results -->
+                <tr>
+                <td rowspan="3">(400M)</td>
+                <td>OpenCLIP</td>
+                <td>19.7</td>
+                <td>22.5</td>
+                <td>16.2</td>
+                <td>27.1</td>
+                <td>8.9</td>
+                <td>16.9</td>
+                <td>25.7</td>
+                <td>15.7</td>
+                <td>15.5</td>
+                </tr>
+                <tr>
+                <td>TransCLIP</td>
+                <td>21.8</td>
+                <td>25.2</td>
+                <td>19.1</td>
+                <td><strong>29.3</strong></td>
+                <td>10.1</td>
+                <td>17.3</td>
+                <td>29.5</td>
+                <td>16.8</td>
+                <td>19.6</td>
+                </tr>
+                <tr>
+                <td><strong>ZSNL(ours)</strong></td>
+                <td><strong>25.7</strong></td>
+                <td><strong>39.9</strong></td>
+                <td><strong>34.9</strong></td>
+                <td>27.6</td>
+                <td><strong>29.4</strong></td>
+                <td><strong>24.2</strong></td>
+                <td><strong>43.9</strong></td>
+                <td><strong>26.4</strong></td>
+                <td><strong>62.7</strong></td>
+                </tr>
+                <tr>
+                <td colspan="2">Δ</td>
+                <td>+3.9</td>
+                <td>+14.7</td>
+                <td>+15.8</td>
+                <td>-1.7</td>
+                <td>+19.3</td>
+                <td>+6.9</td>
+                <td>+14.4</td>
+                <td>+9.6</td>
+                <td>+43.1</td>
+                </tr>
+                
+                <!-- Horizontal separator -->
+                <tr style="border-top: 2px solid #000;">
+                <td rowspan="3">(5B)</td>
+                <td>OpenCLIP</td>
+                <td>25.9</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>32.2</td>
+                <td>-</td>
+                <td>34.3</td>
+                <td>21.7</td>
+                </tr>
+                <tr>
+                <td>TransCLIP</td>
+                <td>31.1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>35.1</td>
+                <td>-</td>
+                <td>35.1</td>
+                <td>28.1</td>
+                </tr>
+                <tr>
+                <td><strong>ZSNL(ours)</strong></td>
+                <td><strong>45.6</strong></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><strong>59.8</strong></td>
+                <td>-</td>
+                <td><strong>70.7</strong></td>
+                <td><strong>72.5</strong></td>
+                </tr>
+                <tr>
+                <td colspan="2">Δ</td>
+                <td>+14.5</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>+24.7</td>
+                <td>-</td>
+                <td>+35.6</td>
+                <td>+42.4</td>
+                </tr>
+            </tbody>
+            <caption>Table 4. Zero-shot learning ACC (%) in OOP classes drawn from domains in LAION-Beyond (400M) and (5B). Δ indicates the absolute ratio that ZSNL exceeds the second best.</caption>
+            </table>
         </div>
       </div>
     </div>
