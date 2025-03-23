@@ -414,13 +414,291 @@
           FSNL maintains high recognition rates for OOP concepts while preserving original performance on IP concepts, achieving the best of both worlds.
         </p>
 
-        <!-- Placeholder for Table 2 -->
-        <div class="has-text-centered">
-          <figure class="image">
-            <img src="[Table 2: OOP-to-IP open-vocabulary prediction comparison]" alt="OOP-to-IP open-vocabulary prediction">
-            <figcaption>Table 2: OOP-to-IP open-vocabulary prediction. OOP, IP, and H-mean represent the accuracies of the models trained for OOP few-shot learning (4-shot), their accuracies in IP image dataset, and their compound Harmonic mean score, respectively.</figcaption>
-          </figure>
-        </div>
+        <!-- Replace the image placeholder with this HTML table -->
+<div class="has-text-centered" style="overflow-x: auto;">
+    <table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+      <caption>Table 2. OOP-to-IP open-vocabulary prediction. <strong>OOP</strong>, <strong>IP</strong>, and <strong>H-mean</strong> represent the accuracies of the models trained for OOP few-shot learning (4-shot), their accuracies in IP image dataset, and their compound Harmonic mean score, respectively (best viewed in color).</caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Baselines</th>
+          <th rowspan="2">Metric</th>
+          <th colspan="10" style="text-align: center;">Domains</th>
+          <th rowspan="2">Extra subnet</th>
+        </tr>
+        <tr>
+          <th>Animals</th>
+          <th>Architecture</th>
+          <th>Attire</th>
+          <th>FolkArt</th>
+          <th>Food</th>
+          <th>Insects_Spider</th>
+          <th>Landmark</th>
+          <th>Plants_Fungi</th>
+          <th>Pokemon</th>
+          <th>Avg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- OpenCLIP -->
+        <tr>
+          <td rowspan="3">OpenCLIP</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;">19.70</td>
+          <td style="background-color: #f8d7f8;">22.49</td>
+          <td style="background-color: #f8d7f8;">16.18</td>
+          <td style="background-color: #f8d7f8;">27.07</td>
+          <td style="background-color: #f8d7f8;">8.88</td>
+          <td style="background-color: #f8d7f8;">16.86</td>
+          <td style="background-color: #f8d7f8;">25.65</td>
+          <td style="background-color: #f8d7f8;">15.71</td>
+          <td style="background-color: #f8d7f8;">15.47</td>
+          <td style="background-color: #f8d7f8;">18.67</td>
+          <td rowspan="3">No</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;"><strong>41.66</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>48.60</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>64.57</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>49.67</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>56.93</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>33.28</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>93.41</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>33.71</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>58.58</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>53.38</strong></td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td>26.75</td>
+          <td>30.75</td>
+          <td>25.88</td>
+          <td>35.04</td>
+          <td>15.36</td>
+          <td>22.38</td>
+          <td>40.25</td>
+          <td>21.43</td>
+          <td>24.48</td>
+          <td>26.92</td>
+        </tr>
+        
+        <!-- CoOp -->
+        <tr>
+          <td rowspan="3">CoOp</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;">38.31</td>
+          <td style="background-color: #f8d7f8;">76.54</td>
+          <td style="background-color: #f8d7f8;">60.28</td>
+          <td style="background-color: #f8d7f8;">68.35</td>
+          <td style="background-color: #f8d7f8;">61.67</td>
+          <td style="background-color: #f8d7f8;">47.18</td>
+          <td style="background-color: #f8d7f8;">85.24</td>
+          <td style="background-color: #f8d7f8;">48.25</td>
+          <td style="background-color: #f8d7f8;">39.24</td>
+          <td style="background-color: #f8d7f8;">58.34</td>
+          <td rowspan="3">No</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;">26.56</td>
+          <td style="background-color: #d7f8f8;">46.43</td>
+          <td style="background-color: #d7f8f8;">43.29</td>
+          <td style="background-color: #d7f8f8;">42.04</td>
+          <td style="background-color: #d7f8f8;">32.48</td>
+          <td style="background-color: #d7f8f8;">17.69</td>
+          <td style="background-color: #d7f8f8;">86.54</td>
+          <td style="background-color: #d7f8f8;">16.67</td>
+          <td style="background-color: #d7f8f8;">32.45</td>
+          <td style="background-color: #d7f8f8;">38.24</td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td>31.37</td>
+          <td>57.8</td>
+          <td>50.39</td>
+          <td>52.06</td>
+          <td>42.55</td>
+          <td>25.73</td>
+          <td>85.89</td>
+          <td>24.78</td>
+          <td>35.52</td>
+          <td>45.12</td>
+        </tr>
+        
+        <!-- CoCoOp -->
+        <tr>
+          <td rowspan="3">CoCoOp</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;">23.82</td>
+          <td style="background-color: #f8d7f8;">38.53</td>
+          <td style="background-color: #f8d7f8;">29.58</td>
+          <td style="background-color: #f8d7f8;">31.29</td>
+          <td style="background-color: #f8d7f8;">19.94</td>
+          <td style="background-color: #f8d7f8;">23.16</td>
+          <td style="background-color: #f8d7f8;">45.81</td>
+          <td style="background-color: #f8d7f8;">20.35</td>
+          <td style="background-color: #f8d7f8;">18.10</td>
+          <td style="background-color: #f8d7f8;">27.84</td>
+          <td rowspan="3">Yes</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;">36.82</td>
+          <td style="background-color: #d7f8f8;">41.30</td>
+          <td style="background-color: #d7f8f8;">39.40</td>
+          <td style="background-color: #d7f8f8;">33.19</td>
+          <td style="background-color: #d7f8f8;">36.15</td>
+          <td style="background-color: #d7f8f8;">30.76</td>
+          <td style="background-color: #d7f8f8;">85.27</td>
+          <td style="background-color: #d7f8f8;">28.29</td>
+          <td style="background-color: #d7f8f8;">37.22</td>
+          <td style="background-color: #d7f8f8;">40.93</td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td>28.93</td>
+          <td>39.87</td>
+          <td>33.79</td>
+          <td>32.21</td>
+          <td>25.7</td>
+          <td>26.42</td>
+          <td>59.6</td>
+          <td>23.67</td>
+          <td>24.36</td>
+          <td>32.73</td>
+        </tr>
+        
+        <!-- CLIP-Adapter -->
+        <tr>
+          <td rowspan="3">CLIP-Adapter</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;">42.80</td>
+          <td style="background-color: #f8d7f8;">81.40</td>
+          <td style="background-color: #f8d7f8;">73.72</td>
+          <td style="background-color: #f8d7f8;">78.20</td>
+          <td style="background-color: #f8d7f8;">83.48</td>
+          <td style="background-color: #f8d7f8;">51.00</td>
+          <td style="background-color: #f8d7f8;">92.03</td>
+          <td style="background-color: #f8d7f8;">54.17</td>
+          <td style="background-color: #f8d7f8;">63.82</td>
+          <td style="background-color: #f8d7f8;">68.69</td>
+          <td rowspan="3">Yes</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;">35.78</td>
+          <td style="background-color: #d7f8f8;">46.60</td>
+          <td style="background-color: #d7f8f8;">57.43</td>
+          <td style="background-color: #d7f8f8;">44.01</td>
+          <td style="background-color: #d7f8f8;">52.31</td>
+          <td style="background-color: #d7f8f8;">23.86</td>
+          <td style="background-color: #d7f8f8;">89.64</td>
+          <td style="background-color: #d7f8f8;">22.68</td>
+          <td style="background-color: #d7f8f8;">48.30</td>
+          <td style="background-color: #d7f8f8;">46.73</td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td>38.98</td>
+          <td>59.27</td>
+          <td>64.56</td>
+          <td>56.32</td>
+          <td>64.32</td>
+          <td>32.51</td>
+          <td>90.82</td>
+          <td>31.97</td>
+          <td>54.99</td>
+          <td>54.86</td>
+        </tr>
+        
+        <!-- Learning-to-Name -->
+        <tr>
+          <td rowspan="3">Learning-to-Name</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;">26.18</td>
+          <td style="background-color: #f8d7f8;">41.64</td>
+          <td style="background-color: #f8d7f8;">43.24</td>
+          <td style="background-color: #f8d7f8;">54.11</td>
+          <td style="background-color: #f8d7f8;">44.18</td>
+          <td style="background-color: #f8d7f8;">31.21</td>
+          <td style="background-color: #f8d7f8;">50.13</td>
+          <td style="background-color: #f8d7f8;">24.76</td>
+          <td style="background-color: #f8d7f8;">37.99</td>
+          <td style="background-color: #f8d7f8;">39.27</td>
+          <td rowspan="3">Yes</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;">32.86</td>
+          <td style="background-color: #d7f8f8;">40.16</td>
+          <td style="background-color: #d7f8f8;">51.24</td>
+          <td style="background-color: #d7f8f8;">39.89</td>
+          <td style="background-color: #d7f8f8;">42.17</td>
+          <td style="background-color: #d7f8f8;">28.90</td>
+          <td style="background-color: #d7f8f8;">88.21</td>
+          <td style="background-color: #d7f8f8;">26.05</td>
+          <td style="background-color: #d7f8f8;">45.11</td>
+          <td style="background-color: #d7f8f8;">43.84</td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td>29.14</td>
+          <td>40.89</td>
+          <td>46.90</td>
+          <td>45.92</td>
+          <td>43.15</td>
+          <td>30.01</td>
+          <td>63.93</td>
+          <td>25.39</td>
+          <td>41.25</td>
+          <td>40.73</td>
+        </tr>
+        
+        <!-- FSNL(ours) -->
+        <tr>
+          <td rowspan="3">FSNL(ours)</td>
+          <td style="background-color: #f8d7f8;">OOP</td>
+          <td style="background-color: #f8d7f8;"><strong>51.77</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>88.03</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>80.47</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>86.23</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>90.85</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>65.03</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>95.57</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>63.85</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>77.88</strong></td>
+          <td style="background-color: #f8d7f8;"><strong>77.74</strong></td>
+          <td rowspan="3">No</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d7f8f8;">IP</td>
+          <td style="background-color: #d7f8f8;"><strong>41.66</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>48.60</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>64.57</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>49.67</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>56.93</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>33.28</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>93.41</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>33.71</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>58.58</strong></td>
+          <td style="background-color: #d7f8f8;"><strong>53.38</strong></td>
+        </tr>
+        <tr>
+          <td>H-mean</td>
+          <td><strong>46.17</strong></td>
+          <td><strong>62.63</strong></td>
+          <td><strong>71.65</strong></td>
+          <td><strong>63.03</strong></td>
+          <td><strong>70.0</strong></td>
+          <td><strong>44.03</strong></td>
+          <td><strong>94.48</strong></td>
+          <td><strong>44.12</strong></td>
+          <td><strong>68.87</strong></td>
+          <td><strong>62.55</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
       </div>
     </div>
 
