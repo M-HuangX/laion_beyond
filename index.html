@@ -710,12 +710,119 @@
           In evaluations with mixed OOP and IP concepts, FSNL significantly outperforms all baseline methods.
         </p>
 
-        <!-- Placeholder for Table 3 -->
-        <div class="has-text-centered">
-          <figure class="image">
-            <img src="[Table 3: Open-world transfer results]" alt="Open-world transfer results">
-            <figcaption>Table 3: The open-world transfer results (ACC across all OOP-class test images and IP-class images) across 9 domains.</figcaption>
-          </figure>
+        <!-- Replace the image placeholder with this HTML table -->
+        <div class="has-text-centered" style="overflow-x: auto;">
+            <table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+            <caption>Table 3. The open-world transfer results (ACC across all OOP-class test images and IP-class images) across 9 domains. <em>Linear Probe</em> and <em>TaskRes</em> have been excluded due to their failure to transfer the training vocabulary. Δ indicates the absolute ratio that FSNL exceeds the second best.</caption>
+            <thead>
+                <tr>
+                <th></th>
+                <th>Anim</th>
+                <th>Arch</th>
+                <th>Atti</th>
+                <th>Folk</th>
+                <th>Food</th>
+                <th>Insect</th>
+                <th>Ladmk</th>
+                <th>Plant</th>
+                <th>Pokem</th>
+                <th>Avg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>OpenCLIP</td>
+                <td>19.40</td>
+                <td>25.21</td>
+                <td>25.23</td>
+                <td>27.75</td>
+                <td>18.86</td>
+                <td>16.43</td>
+                <td>46.10</td>
+                <td>16.47</td>
+                <td>26.89</td>
+                <td>24.7</td>
+                </tr>
+                <tr>
+                <td>CoOp</td>
+                <td>23.99</td>
+                <td>57.93</td>
+                <td>43.85</td>
+                <td>52.33</td>
+                <td>32.63</td>
+                <td>26.37</td>
+                <td>80.07</td>
+                <td>27.21</td>
+                <td>22.78</td>
+                <td>40.8</td>
+                </tr>
+                <tr>
+                <td>CoCoOp</td>
+                <td>18.86</td>
+                <td>29.40</td>
+                <td>23.78</td>
+                <td>22.54</td>
+                <td>17.09</td>
+                <td>17.78</td>
+                <td>50.14</td>
+                <td>16.93</td>
+                <td>18.38</td>
+                <td>23.88</td>
+                </tr>
+                <tr>
+                <td>CLIP-Adap</td>
+                <td>29.51</td>
+                <td>64.60</td>
+                <td>58.92</td>
+                <td>59.98</td>
+                <td>64.14</td>
+                <td>29.23</td>
+                <td>85.05</td>
+                <td>32.89</td>
+                <td>54.47</td>
+                <td>53.2</td>
+                </tr>
+                <tr>
+                <td>L2Name</td>
+                <td>21.78</td>
+                <td>33.02</td>
+                <td>25.26</td>
+                <td>27.09</td>
+                <td>25.14</td>
+                <td>21.13</td>
+                <td>67.05</td>
+                <td>22.89</td>
+                <td>26.47</td>
+                <td>29.98</td>
+                </tr>
+                <tr>
+                <td><strong>FSNL(ours)</strong></td>
+                <td><strong>36.35</strong></td>
+                <td><strong>71.00</strong></td>
+                <td><strong>63.75</strong></td>
+                <td><strong>69.27</strong></td>
+                <td><strong>68.09</strong></td>
+                <td><strong>39.70</strong></td>
+                <td><strong>92.54</strong></td>
+                <td><strong>40.53</strong></td>
+                <td><strong>65.29</strong></td>
+                <td><strong>60.72</strong></td>
+                </tr>
+                <tr>
+                <td>Δ</td>
+                <td>+6.84</td>
+                <td>+6.40</td>
+                <td>+5.42</td>
+                <td>+9.29</td>
+                <td>+3.95</td>
+                <td>+10.47</td>
+                <td>+7.49</td>
+                <td>+7.64</td>
+                <td>+10.82</td>
+                <td>+7.52</td>
+                </tr>
+            </tbody>
+            </table>
         </div>
       </div>
     </div>
