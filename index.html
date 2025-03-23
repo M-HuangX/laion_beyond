@@ -249,77 +249,72 @@
         </ul>
 
         <!-- Placeholder for Figure 3 and Table 1 -->
-        <div class="columns">
-          <div class="column">
+        <div class="has-text-centered">
             <figure class="image">
-              <img src="static/images/Figure3_tSNE.png" alt="t-SNE visualization of image features">
-              <figcaption>Figure 3: The t-SNE visualization for (a) image features from 20 OOP classes drawn from Plants & Fungi; (b) image features from 10 OOP classes and 10 IP classes.</figcaption>
+                <img src="static/images/Figure3_tSNE.png" alt="t-SNE visualization of image features">
+                <figcaption>Figure 3: The t-SNE visualization for (a) image features from 20 OOP classes drawn from Plants & Fungi; (b) image features from 10 OOP classes and 10 IP classes.</figcaption>
             </figure>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <caption>Table 1. The normalized clustering accuracy across features extracted from OOP-class test images and IP-class test images across 9 domains, respectively.</caption>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Anim</th>
+                  <th>Arch</th>
+                  <th>Atti</th>
+                  <th>Folk</th>
+                  <th>Food</th>
+                  <th>Insect</th>
+                  <th>Ladmk</th>
+                  <th>Plant</th>
+                  <th>Pokem</th>
+                  <th>Avg</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>IP classes</td>
+                  <td>40.27</td>
+                  <td>91.04</td>
+                  <td>82.09</td>
+                  <td>78.02</td>
+                  <td>81.72</td>
+                  <td>50.44</td>
+                  <td>93.01</td>
+                  <td>55.71</td>
+                  <td>34.07</td>
+                  <td>68.15</td>
+                </tr>
+                <tr>
+                  <td>OOP classes</td>
+                  <td>37.27</td>
+                  <td>81.06</td>
+                  <td>68.92</td>
+                  <td>76.60</td>
+                  <td>80.65</td>
+                  <td>48.30</td>
+                  <td>86.39</td>
+                  <td>53.17</td>
+                  <td>35.80</td>
+                  <td>63.13</td>
+                </tr>
+                <tr>
+                  <td>IP-OOP gap</td>
+                  <td>3.00</td>
+                  <td>10.02</td>
+                  <td>13.83</td>
+                  <td>1.42</td>
+                  <td>1.07</td>
+                  <td>2.14</td>
+                  <td>6.62</td>
+                  <td>2.54</td>
+                  <td>1.73</td>
+                  <td>5.02</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="column">
-            <div class="has-text-centered">
-                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                  <caption>Table 1. The normalized clustering accuracy across features extracted from OOP-class test images and IP-class test images across 9 domains, respectively.</caption>
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Anim</th>
-                      <th>Arch</th>
-                      <th>Atti</th>
-                      <th>Folk</th>
-                      <th>Food</th>
-                      <th>Insect</th>
-                      <th>Ladmk</th>
-                      <th>Plant</th>
-                      <th>Pokem</th>
-                      <th>Avg</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>IP classes</td>
-                      <td>40.27</td>
-                      <td>91.04</td>
-                      <td>82.09</td>
-                      <td>78.02</td>
-                      <td>81.72</td>
-                      <td>50.44</td>
-                      <td>93.01</td>
-                      <td>55.71</td>
-                      <td>34.07</td>
-                      <td>68.15</td>
-                    </tr>
-                    <tr>
-                      <td>OOP classes</td>
-                      <td>37.27</td>
-                      <td>81.06</td>
-                      <td>68.92</td>
-                      <td>76.60</td>
-                      <td>80.65</td>
-                      <td>48.30</td>
-                      <td>86.39</td>
-                      <td>53.17</td>
-                      <td>35.80</td>
-                      <td>63.13</td>
-                    </tr>
-                    <tr>
-                      <td>IP-OOP gap</td>
-                      <td>3.00</td>
-                      <td>10.02</td>
-                      <td>13.83</td>
-                      <td>1.42</td>
-                      <td>1.07</td>
-                      <td>2.14</td>
-                      <td>6.62</td>
-                      <td>2.54</td>
-                      <td>1.73</td>
-                      <td>5.02</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-          </div>
-        </div>
       </div>
     </div>
 
